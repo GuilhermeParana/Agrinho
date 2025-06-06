@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+
+        header img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Estilo para o conteúdo principal */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 300px;
+            margin: 20px 0;
+        }
+
+        .content p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Animação para alternância de imagens e textos */
+        @keyframes changeContent {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fadeInOut {
+            animation: changeContent 5s infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="https://via.placeholder.com/100" alt="Logo">
+        <h1>Bem-vindo ao nosso site</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <div class="fadeInOut">
+            <img src="https://via.placeholder.com/300x200" alt="Imagem 1">
+            <p>Texto sobre a primeira imagem. Descubra mais aqui!</p>
+        </div>
+
+        <div class="fadeInOut hidden">
+            <img src="https://via.placeholder.com/300x200?text=Imagem+2" alt="Imagem 2">
+            <p>Texto sobre a segunda imagem. Mais informações para você!</p>
+        </div>
+
+        <div class="fadeInOut hidden">
+            <img src="https://via.placeholder.com/300x200?text=Imagem+3" alt="Imagem 3">
+            <p>Texto sobre a terceira imagem. Continue explorando!</p>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const contentDivs = document.querySelectorAll('.content .fadeInOut');
+
+        function changeContent() {
+            contentDivs.forEach((div, index) => {
+                div.classList.add('hidden');
+            });
+
+            contentDivs[currentIndex].classList.remove('hidden');
+            currentIndex = (currentIndex + 1) % contentDivs.length;
+        }
+
+        setInterval(changeContent, 5000); // Altera a cada 5 segundos
+    </script>
+
+</body>
+</html>
