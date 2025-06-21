@@ -1,91 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conexão Campo/Cidade</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A base do milho no Paraná</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Banner -->
-  <header class="banner">
-    <h1>Festejando a conexão Campo/Cidade: a base do milho no Paraná</h1>
-    <div class="milho-desenhos">
-      <img src="milho1.png" alt="Desenho de milho">
-      <img src="milho2.png" alt="Desenho de milho">
-      <img src="milho3.png" alt="Desenho de milho">
-    </div>
-  </header>
-
-  <!-- Carrossel -->
-  <section class="carrossel">
-    <div class="carrossel-container">
-      <img src="img1.jpg" alt="Imagem 1">
-      <img src="img2.jpg" alt="Imagem 2">
-      <img src="img3.jpg" alt="Imagem 3">
-      <img src="img4.jpg" alt="Imagem 4">
-      <img src="img5.jpg" alt="Imagem 5">
-      <img src="img6.jpg" alt="Imagem 6">
-      <img src="img7.jpg" alt="Imagem 7">
-      <img src="img8.jpg" alt="Imagem 8">
-      <img src="img9.jpg" alt="Imagem 9">
-      <img src="img10.jpg" alt="Imagem 10">
-    </div>
-  </section>
-
-  <!-- Botões -->
-  <div class="botoes">
-    <button>Biblioteca</button>
-    <button>Referências</button>
+  <div class="acessibilidade">
+    <button id="aumentar-fonte">A+</button>
+    <button id="diminuir-fonte">A-</button>
+    <button id="modo-escuro">🌙</button>
   </div>
 
-  <!-- Espaços de Texto -->
-  <section class="textos">
-    <div class="texto">
-      <h2>Título 1</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 2</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 3</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 4</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 5</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 6</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 7</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 8</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 9</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-    <div class="texto">
-      <h2>Título 10</h2>
-      <p>Texto do conteúdo relacionado ao milho.</p>
-    </div>
-  </section>
+  <header class="banner">
+    <h1>A base do milho no Paraná</h1>
+    <div class="milho-formas"></div>
+  </header>
 
-  <!-- Rodapé -->
-  <footer class="rodape">
-    <p>&copy; 2025 Conexão Campo/Cidade - Todos os direitos reservados.</p>
+  <main class="conteudo">
+
+    <!-- Seções alternadas -->
+    <section class="bloco texto-imagem">
+      <div class="texto">
+        <h2>Panorama da produção: números, áreas e recordes</h2>
+        <p>Na safra 2024/25, [...] sinaliza força para o cereal.</p>
+      </div>
+      <div class="imagem imagem1"></div>
+    </section>
+
+    <section class="bloco imagem-texto">
+      <div class="imagem imagem2"></div>
+      <div class="texto">
+        <h2>Desafios climáticos: impacto da seca na safrinha</h2>
+        <p>Em 2024, [...] devido à quebra da safra.</p>
+      </div>
+    </section>
+
+    <section class="bloco texto-imagem">
+      <div class="texto">
+        <h2>Mudança de perfil: chegada da soja e redução da área</h2>
+        <p>Entre 2010 e 2024, [...] responde por quase 25% da produção estadual.</p>
+      </div>
+      <div class="imagem imagem3"></div>
+    </section>
+
+    <section class="bloco imagem-texto">
+      <div class="imagem imagem4"></div>
+      <div class="texto">
+        <h2>Conquista de produtividade</h2>
+        <p>Mesmo com a menor área [...] mesmo em áreas reduzidas.</p>
+      </div>
+    </section>
+
+    <section class="bloco texto-imagem">
+      <div class="texto">
+        <h2>Impacto socioeconômico: agricultura familiar e cooperativismo</h2>
+        <p>A agricultura familiar [...] consolidam a imagem do milho como motor econômico.</p>
+      </div>
+      <div class="imagem imagem5"></div>
+    </section>
+
+    <!-- Carrossel estilo Netflix -->
+    <section class="carrossel">
+      <h2>Galeria do milho</h2>
+      <div class="carrossel-container">
+        <figure><img src="img1.jpg" alt="Imagem 1" /></figure>
+        <figure><img src="img2.jpg" alt="Imagem 2" /></figure>
+        <figure><img src="img3.jpg" alt="Imagem 3" /></figure>
+        <figure><img src="img4.jpg" alt="Imagem 4" /></figure>
+        <figure><img src="img5.jpg" alt="Imagem 5" /></figure>
+        <figure><img src="img6.jpg" alt="Imagem 6" /></figure>
+        <figure><img src="img7.jpg" alt="Imagem 7" /></figure>
+        <figure><img src="img8.jpg" alt="Imagem 8" /></figure>
+        <figure><img src="img9.jpg" alt="Imagem 9" /></figure>
+        <figure><img src="img10.jpg" alt="Imagem 10" /></figure>
+      </div>
+    </section>
+
+    <!-- Segunda parte das seções -->
+    <section class="bloco texto-imagem">
+      <div class="texto">
+        <h2>Logística e infraestrutura: gargalos e riscos</h2>
+        <p>Apesar da modernização [...] poderiam vir via financiamentos públicos.</p>
+      </div>
+      <div class="imagem imagem6"></div>
+    </section>
+
+    <section class="bloco imagem-texto">
+      <div class="imagem imagem7"></div>
+      <div class="texto">
+        <h2>Agregação de valor: agroindústria e exportação</h2>
+        <p>A indústria de produtos [...] fortalecendo a economia regional.</p>
+      </div>
+    </section>
+
+    <section class="bloco texto-imagem">
+      <div class="texto">
+        <h2>Integração rural-urbana: o milho na cultura e no cotidiano</h2>
+        <p>O milho une o campo [...] entre a lavoura e a metrópole.</p>
+      </div>
+      <div class="imagem imagem8"></div>
+    </section>
+
+    <section class="bloco imagem-texto">
+      <div class="imagem imagem9"></div>
+      <div class="texto">
+        <h2>Perspectivas futuras: sustentabilidade e resiliência</h2>
+        <p>Com a redução da área [...] garantirão inclusão social e renda.</p>
+      </div>
+    </section>
+
+    <section class="bloco texto-imagem">
+      <div class="texto">
+        <h2>Conclusão</h2>
+        <p>O milho no Paraná [...] desenvolvimento regional e merece ser celebrado.</p>
+      </div>
+      <div class="imagem imagem10"></div>
+    </section>
+  </main>
+
+  <footer>
+    Concurso Agrinho 2025 - Colégio Estadual Cecília Meireles, Ubiratã-PR
   </footer>
 </body>
-                      </html>
+</html>
