@@ -1,122 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A base do milho no Paraná</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <input type="checkbox" id="modo-escuro-toggle" hidden>
   <div class="acessibilidade">
-    <button id="aumentar-fonte">A+</button>
-    <button id="diminuir-fonte">A-</button>
-    <button id="modo-escuro">🌙</button>
+    <label for="modo-escuro-toggle">🌙 Modo Escuro</label>
+    <label for="aumentar">A+</label>
+    <label for="diminuir">A-</label>
   </div>
 
   <header class="banner">
     <h1>A base do milho no Paraná</h1>
-    <div class="milho-formas"></div>
+    <div class="milho-desenho"></div>
   </header>
 
-  <main class="conteudo">
-
-    <!-- Seções alternadas -->
+  <main>
+    <!-- TEXTO - IMAGEM -->
     <section class="bloco texto-imagem">
       <div class="texto">
         <h2>Panorama da produção: números, áreas e recordes</h2>
-        <p>Na safra 2024/25, [...] sinaliza força para o cereal.</p>
+        <p>Na safra 2024/25, a primeira safra de milho do Paraná atingiu uma produção estimada de 2,7 milhões de toneladas, em uma área de cerca de 267,7 mil hectares, a menor área plantada já registrada para essa safra, redução de 9,6% em relação à temporada anterior. Apesar disso, produtividade aumentou: uma média histórica de 10,4 mil kg/ha aponta para uma safra ainda resiliente. Na segunda safra ou “safrinha”, a expectativa era ainda mais positiva: produção estimada de 15,9 milhões de toneladas, em 2,62 milhões de hectares, com ganho de produtividade. Uma conjuntura que sinaliza força para o cereal.</p>
       </div>
-      <div class="imagem imagem1"></div>
+      <div class="imagem"></div>
     </section>
 
+    <!-- IMAGEM - TEXTO -->
     <section class="bloco imagem-texto">
-      <div class="imagem imagem2"></div>
+      <div class="imagem"></div>
       <div class="texto">
         <h2>Desafios climáticos: impacto da seca na safrinha</h2>
-        <p>Em 2024, [...] devido à quebra da safra.</p>
+        <p>Em 2024, entretanto, a safrinha enfrentou forte estiagem em várias regiões do Paraná (Oeste, Norte e Noroeste). A combinação de déficit hídrico e calor excessivo causou perdas médias acima de 60% em algumas lavouras. A distribuição irregular das chuvas afetou fases cruciais como floração e enchimento de grãos, reduzindo em média a produção em 20% em relação ao ciclo anterior. Produtores da região Oeste confirmaram as perdas e ressaltaram a necessidade de renegociar dívidas devido à quebra da safra.</p>
       </div>
     </section>
 
+    <!-- TEXTO - IMAGEM -->
     <section class="bloco texto-imagem">
       <div class="texto">
         <h2>Mudança de perfil: chegada da soja e redução da área</h2>
-        <p>Entre 2010 e 2024, [...] responde por quase 25% da produção estadual.</p>
+        <p>Entre 2010 e 2024, a área plantada de milho na primeira safra caiu de cerca de 900 mil hectares para pouco mais de 267 mil hectares, queda superior a 70%. A principal causa? A migração para a soja, que oferece maior liquidez e rentabilidade aos agricultores. Hoje, o milho de verão é visto como “cultivo de nicho”, concentrado em produtores especializados. As regiões Sul e Campos Gerais (como Ponta Grossa) lideram a produção; na região Sul, 70% da área já está plantada e Ponta Grossa responde por quase 25% da produção estadual.</p>
       </div>
-      <div class="imagem imagem3"></div>
+      <div class="imagem"></div>
     </section>
 
+    <!-- IMAGEM - TEXTO -->
     <section class="bloco imagem-texto">
-      <div class="imagem imagem4"></div>
+      <div class="imagem"></div>
       <div class="texto">
         <h2>Conquista de produtividade</h2>
-        <p>Mesmo com a menor área [...] mesmo em áreas reduzidas.</p>
+        <p>Mesmo com a menor área plantada, a estimativa de produtividade para a primeira safra é recorde: média de 10,4 mil kg/ha, superando os 10,2 mil kg/ha de 2022/23. Esse desempenho elevado é atribuído ao uso de técnicas avançadas e ao perfil de produtores especializados, que mantêm alta produtividade mesmo em áreas reduzidas.</p>
       </div>
     </section>
 
+    <!-- TEXTO - IMAGEM -->
     <section class="bloco texto-imagem">
       <div class="texto">
         <h2>Impacto socioeconômico: agricultura familiar e cooperativismo</h2>
-        <p>A agricultura familiar [...] consolidam a imagem do milho como motor econômico.</p>
+        <p>A agricultura familiar tem papel preponderante no Paraná: 320 mil das 374 mil propriedades são familiares, empregando cerca de 90% dos trabalhadores rurais do estado. Em culturas como milho, a participação familiar é significativa; ainda que menor que nas culturas de mandioca e feijão, que respondem por 83% e 69,6% da produção familiar no Brasil. Além disso, o cooperativismo impulsionado por imigrantes, especialmente ao longo do século XX, fortaleceu a cadeia. Cooperativas por todo o Paraná modernizaram o cultivo de milho; armazenagem, beneficiamento e integração com a agroindústria de rações são processos que consolidam a imagem do milho como motor econômico.</p>
       </div>
-      <div class="imagem imagem5"></div>
+      <div class="imagem"></div>
     </section>
 
-    <!-- Carrossel estilo Netflix -->
+    <!-- Carrossel -->
     <section class="carrossel">
-      <h2>Galeria do milho</h2>
-      <div class="carrossel-container">
-        <figure><img src="img1.jpg" alt="Imagem 1" /></figure>
-        <figure><img src="img2.jpg" alt="Imagem 2" /></figure>
-        <figure><img src="img3.jpg" alt="Imagem 3" /></figure>
-        <figure><img src="img4.jpg" alt="Imagem 4" /></figure>
-        <figure><img src="img5.jpg" alt="Imagem 5" /></figure>
-        <figure><img src="img6.jpg" alt="Imagem 6" /></figure>
-        <figure><img src="img7.jpg" alt="Imagem 7" /></figure>
-        <figure><img src="img8.jpg" alt="Imagem 8" /></figure>
-        <figure><img src="img9.jpg" alt="Imagem 9" /></figure>
-        <figure><img src="img10.jpg" alt="Imagem 10" /></figure>
+      <h2>Galeria de Imagens</h2>
+      <div class="container">
+        <img src="img1.jpg" alt="Imagem 1">
+        <img src="img2.jpg" alt="Imagem 2">
+        <img src="img3.jpg" alt="Imagem 3">
+        <img src="img4.jpg" alt="Imagem 4">
+        <img src="img5.jpg" alt="Imagem 5">
+        <img src="img6.jpg" alt="Imagem 6">
+        <img src="img7.jpg" alt="Imagem 7">
+        <img src="img8.jpg" alt="Imagem 8">
+        <img src="img9.jpg" alt="Imagem 9">
+        <img src="img10.jpg" alt="Imagem 10">
       </div>
     </section>
 
-    <!-- Segunda parte das seções -->
+    <!-- Segunda parte: textos alternados -->
     <section class="bloco texto-imagem">
       <div class="texto">
         <h2>Logística e infraestrutura: gargalos e riscos</h2>
-        <p>Apesar da modernização [...] poderiam vir via financiamentos públicos.</p>
+        <p>Apesar da modernização, a infraestrutura de armazenagem ainda apresenta limitações. Em 2022/23, estimou-se um prejuízo de R$ 30,5 bilhões pelos grãos expostos ao relento, o que afetou especialmente o Paraná, na região de Campos Gerais. Produtores relataram que o milho foi comercializado a apenas R$ 40/saca, um valor abaixo do custo de produção. Braga, um produtor local, lamentou que “esse valor não remunera os custos de produção e a atividade opera no vermelho”. O problema está na falta de capacidade de armazenagem nas propriedades (apenas 15% do total), exigindo investimentos estruturais que poderiam vir via financiamentos públicos.</p>
       </div>
-      <div class="imagem imagem6"></div>
+      <div class="imagem"></div>
     </section>
 
     <section class="bloco imagem-texto">
-      <div class="imagem imagem7"></div>
+      <div class="imagem"></div>
       <div class="texto">
         <h2>Agregação de valor: agroindústria e exportação</h2>
-        <p>A indústria de produtos [...] fortalecendo a economia regional.</p>
+        <p>A indústria de produtos derivados do milho, como fubá, canjica e ração animal se espalha pelo estado. Municípios como Curitiba, Londrina, Maringá e Carambeí possuem indústrias integradas a cooperativas para produção, transformação e distribuição. Já as exportações apresentam recorde: em 2023, o Paraná exportou 4,73 milhões de toneladas de milho, superando o recorde anterior de 4,7 milhões em 2019, o maior volume desde 1997. Esse fluxo beneficia o agronegócio estadual e fortalece a economia regional, movimentando serviços e infraestrutura urbana.</p>
       </div>
     </section>
 
     <section class="bloco texto-imagem">
       <div class="texto">
         <h2>Integração rural-urbana: o milho na cultura e no cotidiano</h2>
-        <p>O milho une o campo [...] entre a lavoura e a metrópole.</p>
+        <p>O milho une o campo e a cidade também culturalmente. Festividades como a “Festa do Milho” em Marilena e em Ventania celebram a cultura milhar, com pratos tradicionais (pamonha, curau, bolo de milho) e eventos comunitários. Essas festas mostram como o cereal se enraíza no imaginário coletivo e no turismo, trazendo visitantes da cidade para o campo e promovendo comércio local. No cenário urbano, o milho está presente em padarias, mercados e mesmo nos rótulos da agroindústria, refletindo assim, a conexão entre a lavoura e a metrópole.</p>
       </div>
-      <div class="imagem imagem8"></div>
+      <div class="imagem"></div>
     </section>
 
     <section class="bloco imagem-texto">
-      <div class="imagem imagem9"></div>
+      <div class="imagem"></div>
       <div class="texto">
         <h2>Perspectivas futuras: sustentabilidade e resiliência</h2>
-        <p>Com a redução da área [...] garantirão inclusão social e renda.</p>
+        <p>Com a redução da área e o aumento da produtividade, o futuro da produção de milho no Paraná parece caminhar para uma agricultura mais eficaz, necessitando menos espaço e mais rendimento. Investimentos em armazenagem, irrigação, e técnicas modernas são essenciais para evitar perdas e aumentar o valor agregado. A integração entre campo e cidade pode ser aprimorada via agroindústrias locais, cooperativas e cadeias curtas, com mais milho diretamente destinado à alimentação humana, gastronomia e turismo. Além disso, políticas de apoio à agricultura familiar e safras de nicho garantirão inclusão social e renda para os pequenos produtores.</p>
       </div>
     </section>
 
     <section class="bloco texto-imagem">
       <div class="texto">
         <h2>Conclusão</h2>
-        <p>O milho no Paraná [...] desenvolvimento regional e merece ser celebrado.</p>
+        <p>O milho no Paraná simboliza muito mais que um grão. Ele conecta o produtor à metrópole, promove a estruturação das cooperativas, alimenta indústrias, sustenta as economias locais e alimenta tradições. Ao festejarmos essa conexão Campo/Cidade, reconhecemos a resiliência do produtor, a riqueza do cooperativismo e o papel vital das políticas de apoio. Entre as lavouras e as cidades, o milho pulsa como elo indispensável ao desenvolvimento regional e merece ser celebrado, valorizado e protegido.</p>
       </div>
-      <div class="imagem imagem10"></div>
+      <div class="imagem"></div>
     </section>
   </main>
 
