@@ -8,7 +8,7 @@ body {
 .banner {
   background-color: #ffeb3b;
   padding: 50px 20px;
-  text-align: justify;
+  text-align: center;
   position: relative;
 }
 
@@ -94,7 +94,7 @@ body {
 footer {
   background-color: #ffeb3b;
   color: black;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
   font-weight: bold;
   }
