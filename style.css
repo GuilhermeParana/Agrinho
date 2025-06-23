@@ -67,34 +67,6 @@ body {
   margin-bottom: 10px;
 }
 
-.carrossel {
-  padding: 40px 20px;
-  background-color: #f3f3f3;
-  text-align: center;
-}
-
-.carrossel h2 {
-  margin-bottom: 20px;
-}
-
-.carrossel-container {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.carrossel-imagens img {
-  width: 200px;
-  margin: 0 10px;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.carrossel-imagens img:hover {
-  transform: scale(1.1);
-}
-
 footer {
   background-color: #ffeb3b;
   color: black;
